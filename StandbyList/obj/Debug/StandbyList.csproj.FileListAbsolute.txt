@@ -1,0 +1,9 @@
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\bin\Debug\StandbyList.dll
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\bin\Debug\StandbyList.pdb
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\bin\Debug\CalendarControl.dll
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\bin\Debug\MathNet.Numerics.dll
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\bin\Debug\CalendarControl.pdb
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\bin\Debug\MathNet.Numerics.xml
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\obj\Debug\StandbyList.csprojResolveAssemblyReference.cache
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\obj\Debug\StandbyList.dll
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\StandbyList\obj\Debug\StandbyList.pdb

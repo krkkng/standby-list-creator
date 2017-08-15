@@ -1,0 +1,8 @@
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\bin\Debug\CalendarControl.dll
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\bin\Debug\CalendarControl.pdb
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\obj\Debug\CalendarControl.csprojResolveAssemblyReference.cache
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\obj\Debug\CalendarControl.Calendar.resources
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\obj\Debug\CalendarControl.PanelWindow.resources
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\obj\Debug\CalendarControl.csproj.GenerateResource.Cache
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\obj\Debug\CalendarControl.dll
+C:\Users\建吾\vagrant\ubuntu64_16\workspace\C#\standby-list-creator\CalendarControl\obj\Debug\CalendarControl.pdb

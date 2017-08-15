@@ -44,7 +44,8 @@ namespace Calendar
             tsCriteriaDateTime.Items.AddRange(Core.StandbyLists.Where(t => new DateTime(t.Year, t.Month, 1) <= new DateTime(Year, Month, 1)).Select(t => new DateInterval(new DateTime(t.Year, t.Month, 1))).ToArray());
             if (tsCriteriaDateTime.Items.Count == 0)
             {
-                tsCriteriaDateTime.Items.Add(Setting.DateInterval);
+				if(Setting.DateInterval != null)
+					tsCriteriaDateTime.Items.Add(Setting.DateInterval);
             }
 
             if (Setting.DateInterval != null)
