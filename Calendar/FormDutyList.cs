@@ -94,15 +94,16 @@ namespace Calendar
                 tpl.ToList().ForEach(u =>
                 {
                     var days = u.Item2.GetDaysWithoutAffair(Year, Month);
-                    days.ForEach(v =>
+                    days.ForEach(day =>
                     {
-                        var cell = dgView[i + colslide, v - (rowslide + 1)];
+						if (day < 1 || day > DateTime.DaysInMonth(Year, Month)) return;	// 取得された日にち(days）には、前の月と次の月の情報も含まれるため、それを除外する
+                        var cell = dgView[i + colslide, day - (rowslide + 1)];
                         if (u.Item2.RuleClass.SelfIdentify == global::StandbyList.RepeatRule.Identify.MonthClass)
                         {
                             global::StandbyList.Accessory accessory = global::StandbyList.Accessory.None;
                             if (u.Item2.RuleClass.DayOfWeek == global::StandbyList.RepeatRule.DayOfWeek.土日)
                             {
-                                var date = new DateTime(Year, Month, v);
+                                var date = new DateTime(Year, Month, day);
                                 if (date.DayOfWeek == DayOfWeek.Sunday)
                                     accessory = u.Item2.Accessory2;
                                 else

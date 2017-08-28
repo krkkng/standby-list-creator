@@ -971,6 +971,7 @@ namespace StandbyList
         public Accessory Accessory2 { get; set; }   // 2日目の勤務態勢
         /// <summary>
         /// ルールに合致する日にちを全て取得します。（ただし、Affairに依存する日にちは除く）
+		/// 取得される日にちは、取得対象の前の月(前の月の最終日:0, その前の日:-1...）、取得対象の次の月（次の月の1日:対象月の最終日+1, 次の月の2日:対象付きの最終日+2...）も含まれます。
         /// </summary>
         /// <param name="Year"></param>
         /// <param name="Month"></param>
@@ -1007,7 +1008,7 @@ namespace StandbyList
                             {
                                 if (RuleClass.IsByDayOfWeek && (RepeatRule.DayOfWeek)date.DayOfWeek == RuleClass.DayOfWeek)
                                 {
-                                    days.Add(i + 1);
+										days.Add(i + 1);
 
                                 }
                             }
@@ -1017,9 +1018,8 @@ namespace StandbyList
                                 if (RuleClass.IsByDayOfWeek && ((RepeatRule.DayOfWeek)date.DayOfWeek == RepeatRule.DayOfWeek.土/* || ((RepeatRule.DayOfWeek)date.DayOfWeek == RepeatRule.DayOfWeek.日))*/))
                                     if (!(date.Day == 1 && date.DayOfWeek == System.DayOfWeek.Sunday))
                                     {
-                                        days.Add(i + 1);
-                                        days.Add(i + 2);
-
+										days.Add(i + 1);
+										days.Add(i + 2);
                                     }
                             }
                         }
@@ -1030,6 +1030,7 @@ namespace StandbyList
         }
         /// <summary>
         /// ルールに合致する日にちを全て取得します。
+		/// 取得される日にちは、取得対象の前の月(前の月の最終日:0, その前の日:-1...）、取得対象の次の月（次の月の1日:対象月の最終日+1, 次の月の2日:対象付きの最終日+2...）も含まれます。
         /// </summary>
         /// <param name="Year">対象の年</param>
         /// <param name="Month">対象の月</param>
